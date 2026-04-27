@@ -33,16 +33,7 @@ export function ContactSection() {
               />
             </label>
             <label className="flex flex-col gap-2 text-sm font-medium text-foreground sm:col-span-2">
-              Project type
-              <input
-                name="projectType"
-                type="text"
-                placeholder="Website redesign, Shopify store, etc."
-                className="rounded-xl border border-border bg-white px-4 py-3 text-sm outline-none transition-colors focus:border-brand"
-              />
-            </label>
-            <label className="flex flex-col gap-2 text-sm font-medium text-foreground sm:col-span-2">
-              Project details
+              Message
               <textarea
                 name="message"
                 required

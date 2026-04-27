@@ -1,11 +1,10 @@
-import type { NavigationItem, PortfolioItem, Service } from "@/lib/types";
+import type { NavigationItem, Service } from "@/lib/types";
 
 export const navItems: NavigationItem[] = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Works", href: "/works" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const services: Service[] = [
@@ -38,32 +37,5 @@ export const services: Service[] = [
     description:
       "Technical SEO baked into development to help search engines crawl, index, and rank your pages.",
     bullets: ["Semantic structure", "Metadata and schema basics", "Accessibility best practices"],
-  },
-];
-
-export const portfolioItems: PortfolioItem[] = [
-  {
-    title: "NovaHealth Landing Revamp",
-    category: "Healthcare SaaS",
-    summary:
-      "Redesigned and rebuilt a SaaS landing page with a clearer content hierarchy and faster page delivery.",
-    results: "+42% demo requests in 8 weeks",
-    linkLabel: "View case preview",
-  },
-  {
-    title: "Lume Storefront Migration",
-    category: "Fashion E-commerce",
-    summary:
-      "Migrated a custom storefront to Shopify with better product discovery and smoother mobile checkout.",
-    results: "+31% mobile conversion rate",
-    linkLabel: "View case preview",
-  },
-  {
-    title: "Finovo Performance Sprint",
-    category: "Fintech Platform",
-    summary:
-      "Optimized a React application bundle and loading strategy to improve speed on lower-end devices.",
-    results: "LCP reduced from 3.9s to 1.8s",
-    linkLabel: "View case preview",
   },
 ];

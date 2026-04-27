@@ -1,10 +1,23 @@
 import { SectionHeading } from "@/components/common/section-heading";
 import { Container } from "@/components/ui/container";
+import { ButtonLink } from "@/components/ui/button-link";
 
-const metrics = [
-  { value: "70+", label: "Projects launched" },
-  { value: "95%", label: "Client retention" },
-  { value: "2.1x", label: "Average conversion uplift" },
+const values = [
+  {
+    title: "Small team, senior execution",
+    description:
+      "You work directly with the people building your product experience, without layers of account management.",
+  },
+  {
+    title: "Quality over volume",
+    description:
+      "We intentionally take on fewer projects so each client gets focused thinking, clean implementation, and fast iteration.",
+  },
+  {
+    title: "Built for growth",
+    description:
+      "Every project is structured to support performance, SEO foundations, and future feature expansion.",
+  },
 ];
 
 export function AboutSection() {
@@ -13,19 +26,22 @@ export function AboutSection() {
       <Container>
         <SectionHeading
           eyebrow="About"
-          title="A strategic partner for startups and growing brands."
-          description="We combine product thinking, conversion-focused design, and reliable engineering to build websites that drive measurable business outcomes."
+          title="A startup web agency focused on practical results."
+          description="Samba Website is an independent team helping startups and small businesses launch modern websites, e-commerce experiences, and conversion-ready interfaces."
         />
         <div className="grid gap-6 md:grid-cols-3">
-          {metrics.map((metric) => (
+          {values.map((value) => (
             <div
-              key={metric.label}
-              className="rounded-2xl border border-border bg-surface p-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+              key={value.title}
+              className="rounded-2xl border border-border bg-surface p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
             >
-              <p className="text-3xl font-semibold text-foreground">{metric.value}</p>
-              <p className="mt-2 text-sm text-muted">{metric.label}</p>
+              <h3 className="text-lg font-semibold text-foreground">{value.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-muted">{value.description}</p>
             </div>
           ))}
+        </div>
+        <div className="mt-10 flex justify-center">
+          <ButtonLink href="/contact">Let&apos;s Talk About Your Project</ButtonLink>
         </div>
       </Container>
     </section>

@@ -9,10 +9,11 @@ export type Service = {
   bullets: string[];
 };
 
-export type PortfolioItem = {
+export type Project = {
+  id: string;
   title: string;
-  category: string;
-  summary: string;
-  results: string;
-  linkLabel: string;
+  description: string;
+  image: string;
+  link: string;
+  techStack: string[];
 };

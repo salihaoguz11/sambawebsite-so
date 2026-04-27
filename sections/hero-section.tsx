@@ -18,9 +18,9 @@ export function HeroSection() {
             UI/UX design, and SEO-ready frontend systems tailored for business growth.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <ButtonLink href="#contact">Get a Quote</ButtonLink>
-            <ButtonLink href="#services" variant="secondary">
-              Explore Services
+            <ButtonLink href="/contact">Get a Quote</ButtonLink>
+            <ButtonLink href="/works" variant="secondary">
+              View Our Work
             </ButtonLink>
           </div>
         </div>

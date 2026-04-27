@@ -19,7 +19,7 @@ export function CtaSection() {
             </p>
             <div className="mt-8">
               <ButtonLink
-                href="#contact"
+                href="/contact"
                 className="!bg-white !text-blue-700 hover:!bg-blue-50 hover:!text-blue-800"
               >
                 Contact Us
