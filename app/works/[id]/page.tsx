@@ -66,7 +66,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
 
             <div className="mt-10">
               <ButtonLink href={project.link} className="px-7" variant="primary">
-                Live Demo
+                Visit Website
               </ButtonLink>
             </div>
           </div>
